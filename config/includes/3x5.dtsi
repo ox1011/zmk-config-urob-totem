@@ -34,7 +34,7 @@
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
               &kp Q,         &kp W,         &kp E,         &kp R,         &kp T,             &kp Y,         &kp U,         &kp I,         &kp O,         &kp P, \
               &aml M_PNK A,  &aml M_RNG S,  &asl M_MDL D,  &aml M_IDX F,  &kp G,             &kp H,         &amr M_IDX J,  &asr M_MDL K,  &amr M_RNG L,  &amr M_PNK SQT, \
-&kp L_EXP,    &kp Z,         &kp X,         &kp C,         &kp V,         &kp B,             &kp N,         &mt RCTRL M,   &mt LS(SPACE) COMMA, &mt RALT DOT, &kp SLASH, &kp R_EXP, \
+&kp L_EXP,    &kp Z,         &kp X,         &kp C,         &kp V,         &kp B,             &kp N,         &mt RCTRL M,   &kp COMMA, &mt LANG DOT, &kp SLASH, &kp R_EXP, \
                                             &kp ESC,       NAV_TAP,       &lt SYS TAB,       &lt SYM RET,   NUM_TAP,       &kp DEL \
 //                                         ╰─────────────┴──────────────┴──────────────╯    ╰──────────────┴──────────────┴──────────────╯
             )>;
@@ -68,7 +68,7 @@
             display-name = "NAV";
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-              &kp W_LFT,     &kp W_RHT,     &kp T_LFT,     &kp T_RHT,     &ht W_CLS T_CLS,   &kp INS,  &mt LN_BSPC CH_BSPC, &mt ST_DOC UP, &mt LN_DEL CH_DEL, &kp PG_UP, \
+              &kp W_LFT,     &kp W_RHT,     &kp T_LFT,     &kp T_RHT,     &ht W_CLS T_CLS,   &kp INS,  &mt WD_BSPC CH_BSPC, &mt ST_DOC UP, &mt WD_DEL CH_DEL, &kp PG_UP, \
               &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &none,             &kp CAPS, &mt ST_LINE LEFT,    &mt EN_DOC DOWN, &mt EN_LINE RIGHT, &kp PG_DN, \
 &kp L_EXP,    &kp C_UND,     &kp C_CUT,     &kp C_CPY,     &kp C_PST,     &kp C_RDO,         &none,         &none,         &none,         &none,         &none,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &kp RET,       &kp BSPC,      &kp DEL \
@@ -80,7 +80,7 @@
             display-name = "SYS";
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-              &bootloader,   &sys_reset,    &soft_off,     &kp LG(L),     &sleep,            &none,         &none,         &none,         &sys_reset,    &bootloader, \
+              &bootloader,   &sys_reset,    &soft_off,     &kp LOCK,      &sleep,            &none,         &none,         &none,         &sys_reset,    &bootloader, \
               &out OUT_USB,  &out OUT_BLE,  &none,         &none,         &none,             &none,         &none,         &none,         &none,         &none, \
 &kp L_EXP,    &bt BT_CLR_ALL, &bt BT_SEL 0, &bt BT_SEL 1,  &bt BT_SEL 2,  &bt BT_CLR,        &none,         &none,         &none,         &none,         &none,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &trans,        &trans,        &trans \
