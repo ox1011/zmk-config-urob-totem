@@ -7,6 +7,7 @@ macros {
                 = <&macro_tap &kp LG(X) &kp U &kp S>;
             display-name = "Windows Sleep";
         )
+/*
         ZMK_MACRO(sel_ln,
             wait-ms = <10>;
             tap-ms = <10>;
@@ -134,5 +135,6 @@ macros {
                 , <&macro_release &kp LSHFT>;
             display-name = "VAC";
         )
+*/
     };
 };
