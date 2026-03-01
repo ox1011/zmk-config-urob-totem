@@ -27,6 +27,16 @@
     continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
 
+/* auto-layers */
+
+// Tap: backspace | hold: layer | shift + hold: layer
+#define NUM_TAP &num_layer_ht 0 BSPC
+ZMK_HOLD_TAP(num_layer_ht, bindings = <&morph_num>, <&kp>;
+             flavor = "balanced"; tapping-term-ms = <200>;
+             quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_MOD_MORPH(morph_num, bindings = <&mo NUM>, <&to NUM>;
+              mods = <(MOD_LSFT)>;)
+
 / {
     behaviors {
         aml: alpha_mods_l {
