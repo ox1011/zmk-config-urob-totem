@@ -7,17 +7,6 @@ macros {
                 = <&macro_tap &kp LG(X) &kp U &kp S>;
             display-name = "Windows Sleep";
         )
-        ZMK_MACRO(alt_tabber,  // adapted from @moutis on ZMK Discord
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>    // leave ALT down to keep menu up
-                , <&macro_tap &kp TAB>       // open the menu
-                , <&macro_pause_for_release> // wait until key release
-                , <&macro_tap &sk_at RALT>   // start timer to release ALT after timeout
-                , <&macro_release &kp LALT>; // now release the initial hold
-            display-name = "Alt-tabber";
-        )
         ZMK_MACRO(sel_ln,
             wait-ms = <10>;
             tap-ms = <10>;
