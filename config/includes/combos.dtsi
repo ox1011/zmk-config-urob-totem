@@ -32,8 +32,8 @@ COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF,          60, 100)
 // bottom
 COMBO(semi,   &kp SEMI,    RB1 RB2,     DEF,          40, 100)
 COMBO(colon,  &kp COLON,   RB2 RB3,     DEF,          40, 100)
-COMBO(mute,   &kp C_MUTE,  RB4 RB3,             NUM,  40, 200)
-COMBO(plpu,   &kp C_PP,    RB2 RB1,             NUM,  40, 200)
+COMBO(mute,   &kp C_MUTE,  RB4 RB3,             NAV,  40, 200)
+COMBO(plpu,   &kp C_PP,    RB2 RB1,             NAV,  40, 200)
 
 // thumb
 
@@ -58,7 +58,7 @@ COMBO(esc,    &kp ESC,     LT4 LT3,     DEF,          80, 100)
 COMBO(del,    &kp DEL,     RT3 RT4,     DEF,          80,  50)
 COMBO(bspc,   &kp BSPC,    RT1 RT2,     DEF,          80,  50)
 COMBO(ret,    &kp RET,     RM3 RM1,     DEF,          40, 100)
-COMBO(tab,    &kp TAB,     LM3 LM1,     DEF NAV NUM,  40, 100)
+COMBO(tab,    &kp TAB,     LM3 LM1,     DEF NUM NAV,  40, 100)
 COMBO(batt,   &ind_bat,    LT0 RT0,     SYS,          80, 100)
 COMBO(conn,   &ind_con,    LT1 RT1,     SYS,          80, 100)
 COMBO(lock,   &kp LG(L),   LT0 RT0,     SYS,          80,  50)
