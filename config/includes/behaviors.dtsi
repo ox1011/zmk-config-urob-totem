@@ -78,13 +78,13 @@ ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;  //시간까지는 홀드가 비활성화 실수로 홀드가 눌리는 것을 방지 
         };
         asr: alpha_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <QUICK_TAP_MS>;
+            quick-tap-ms = <QUICK_TAP_MS>;                    //시간내에 tap-hold로 두번 눌릴때 뒤의 hold는 tap으로 인식
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;     //같은 손에서 f를 누르고 tapping-term 시간 내에 a가 눌리면 mod+a가 아니라 fa로 출력 tap으로 인식 
