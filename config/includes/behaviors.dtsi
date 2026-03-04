@@ -113,6 +113,7 @@ ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
             flavor = "balanced";
             bindings = <&morph_num0>, <&kp>;
         };
+        #define NUM_BSPC &num_ht 0 BSPC
         morph_nav0: morph_nav0 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -127,6 +128,7 @@ ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
             flavor = "balanced";
             bindings = <&morph_nav0>, <&kp>;
         };
+        #define NAV_SPC &nav_ht 0 SPC
         // Swapper for task Switcher
         sw_a: swapper_alttab {
             compatible = "zmk,behavior-smart-toggle";
