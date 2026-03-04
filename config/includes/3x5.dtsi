@@ -77,7 +77,7 @@
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
               &bootloader,   &sys_reset,    &soft_off,     &kp LOCK,      &sleep,            &none,         &none,         &none,         &sys_reset,    &bootloader, \
               &out OUT_USB,  &out OUT_BLE,  &none,         &none,         &none,             &none,         &none,         &none,         &none,         &none, \
-&kp L_EXP,    &bt BT_CLR_ALL, &bt BT_SEL 0, &bt BT_SEL 1,  &bt BT_SEL 2,  &bt BT_CLR,        &none,         &none,         &none,         &none,         &none,        &kp R_EXP, \
+&kp L_EXP,    &bt BT_CLR_ALL, &bt BT_SEL 0, &bt BT_SEL 1,  &bt BT_SEL 2,  &bt BT_CLR,        &nm_ly_ht 0 BSPC,         &none,         &none,         &none,         &none,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &trans,        &trans,        &trans \
 //                                         ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
             )>;
