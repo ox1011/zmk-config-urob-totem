@@ -21,8 +21,6 @@ Additional features are provided by the following [modules](https://zmk.dev/docs
 
 - [**zmk-rgbled-widgets**](https://github.com/caksoylar/zmk-rgbled-widget) to show the connection and battery status with the built-in LEDs of the Xiao BLE controller.
 - [**zmk-smart-toggle**](https://github.com/caksoylar/zmk-smart-toggle) custom behavior module that implements a "smart toggle" key. Used in Swapper.
-- [**zmk-auto-layer**](https://github.com/urob/zmk-auto-layer) This to be used relieve the hold of thumb. hold: &mo layer, tap: &kp, shift + hold: &to layer.
-- [**zmk_helpers**](https://github.com/urob/zmk-helpers) This is a collection of helper macros. Used with auto-layer
 
 ## Boards and Keymaps
 

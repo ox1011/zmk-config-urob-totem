@@ -21,18 +21,18 @@ layers:
   - {t: K, h: Shift}
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
-  - Esc
+  - Shift
   - Z
   - X
   - C
   - V
   - B
   - N
-  - {t: M, h: Ctrl}
-  - ','
+  - M
+  - {t: ',', h: Shift}
   - {t: ., h: Alt}
   - /
-  - Enter
+  - Shift
   - Esc
   - {t: SPC, h: NAV}
   - {t: Tab, h: SYS}
@@ -45,7 +45,7 @@ layers:
   - '8'
   - '9'
   - ']'
-  - AL CALC
+  - ''
   - Left Click
   - Mouse ↑
   - Right Click
@@ -60,18 +60,18 @@ layers:
   - Mouse ↓
   - Mouse →
   - Scroll ↓
-  - Esc
+  - Shift
   - '`'
   - '1'
   - '2'
   - '3'
   - \
-  - STOP
-  - $$mdi:skip-backward$$
-  - $$mdi:skip-forward$$
-  - $$mdi:volume-medium$$
-  - $$mdi:volume-high$$
-  - Enter
+  - ''
+  - Ctrl
+  - Shift
+  - Alt
+  - Gui
+  - Shift
   - .
   - '0'
   - '-'
@@ -99,7 +99,7 @@ layers:
   - F5
   - F6
   - F11
-  - Esc
+  - Shift
   - '~'
   - '!'
   - '@'
@@ -110,7 +110,7 @@ layers:
   - F2
   - F3
   - F10
-  - Enter
+  - Shift
   - (
   - )
   - _
@@ -132,24 +132,24 @@ layers:
   - Alt
   - Shift
   - Ctrl
-  - ''
+  - Del
   - CAPS
   - {t: ←, h: Home}
   - {t: ↓, h: Ctl+End}
   - {t: →, h: End}
   - PgDn
-  - Esc
+  - Shift
   - Undo
   - Cut
   - Copy
   - Paste
   - Redo
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Enter
+  - '&key_repeat'
+  - $$mdi:skip-backward$$
+  - $$mdi:skip-forward$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
+  - Shift
   - {type: trans}
   - {type: held}
   - {type: trans}
@@ -157,45 +157,48 @@ layers:
   - Bspc
   - Del
   SYS:
-  - Boot
-  - Reset
+  - Reset Bootloader
+  - ''
   - BAT Save
   - Lock
-  - Sleep
   - ''
   - ''
-  - ''
-  - Reset
-  - Boot
-  - OUT USB
-  - OUT BLE
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - KP 7
+  - KP 8
+  - KP 9
+  - Reset Bootloader
+  - Gui
+  - Alt
+  - Shift
+  - Ctrl
   - ''
   - ''
+  - KP 4
+  - KP 5
+  - KP 6
   - ''
-  - Esc
+  - Shift
   - BT CLR ALL
   - BT 1
   - BT 2
   - BT 3
   - BT CLR
   - ''
+  - KP 1
+  - KP 2
+  - KP 3
   - ''
-  - ''
-  - ''
-  - ''
-  - Enter
+  - Shift
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
+  - ''
+  - KP 0
   - {type: trans}
 combos:
+- p: [0, 1]
+  k: Esc
+  l: [DEF]
 - p: [12, 13]
   k: (
   l: [DEF]
@@ -216,10 +219,10 @@ combos:
   l: [DEF]
 - p: [30, 29]
   k: $$mdi:volume-off$$
-  l: [NUM]
+  l: [NAV]
 - p: [28, 27]
   k: $$mdi:play-pause$$
-  l: [NUM]
+  l: [NAV]
 - p: [13, 16]
   k: Caps Word
   l: [DEF]
@@ -253,3 +256,24 @@ combos:
   l: [NUM]
   a: bottom
   o: -0.2
+- p: [17, 16]
+  k: KP PLUS
+  l: [SYS]
+- p: [7, 6]
+  k: KP MINUS
+  l: [SYS]
+- p: [6, 17]
+  k: KP MULTIPLY
+  l: [SYS]
+- p: [16, 7]
+  k: KP DIVIDE
+  l: [SYS]
+- p: [28, 27]
+  k: ','
+  l: [SYS]
+- p: [29, 28]
+  k: KP DOT
+  l: [SYS]
+- p: [18, 17]
+  k: Enter
+  l: [SYS]

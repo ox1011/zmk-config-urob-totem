@@ -27,8 +27,8 @@ layers:
   - V
   - B
   - N
-  - {t: M, h: Ctrl}
-  - ','
+  - M
+  - {t: ',', h: Shift}
   - {t: ., h: Ctl+SPC}
   - /
   - {t: SPC, h: NAV}
@@ -41,7 +41,7 @@ layers:
   - '8'
   - '9'
   - ']'
-  - AL CALC
+  - ''
   - Left Click
   - Mouse ↑
   - Right Click
@@ -61,11 +61,11 @@ layers:
   - '2'
   - '3'
   - \
-  - STOP
-  - $$mdi:skip-backward$$
-  - $$mdi:skip-forward$$
-  - $$mdi:volume-medium$$
-  - $$mdi:volume-high$$
+  - ''
+  - Ctrl
+  - Shift
+  - Alt
+  - Gui
   - '0'
   - '-'
   - {type: trans}
@@ -120,7 +120,7 @@ layers:
   - Alt
   - Shift
   - Ctrl
-  - ''
+  - Del
   - CAPS
   - {t: ←, h: Gui+←}
   - {t: ↓, h: Gui+↓}
@@ -131,35 +131,35 @@ layers:
   - Gui+C
   - Gui+V
   - Gui+Sft+Z
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&key_repeat'
+  - $$mdi:skip-backward$$
+  - $$mdi:skip-forward$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
   - {type: held}
   - {type: trans}
   - Enter
   - Bspc
   SYS:
-  - Boot
-  - Reset
+  - Reset Bootloader
+  - ''
   - BAT Save
   - Ctl+Gui+Q
-  - Sleep
   - ''
   - ''
-  - ''
-  - Reset
-  - Boot
-  - OUT USB
-  - OUT BLE
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - KP 7
+  - KP 8
+  - KP 9
+  - Reset Bootloader
+  - Gui
+  - Alt
+  - Shift
+  - Ctrl
   - ''
   - ''
+  - KP 4
+  - KP 5
+  - KP 6
   - ''
   - BT CLR ALL
   - BT 1
@@ -167,15 +167,18 @@ layers:
   - BT 3
   - BT CLR
   - ''
-  - ''
-  - ''
-  - ''
+  - KP 1
+  - KP 2
+  - KP 3
   - ''
   - {type: trans}
   - {type: held}
-  - {type: trans}
-  - {type: trans}
+  - ''
+  - KP 0
 combos:
+- p: [0, 1]
+  k: Esc
+  l: [DEF]
 - p: [12, 13]
   k: (
   l: [DEF]
@@ -196,10 +199,10 @@ combos:
   l: [DEF]
 - p: [29, 28]
   k: $$mdi:volume-off$$
-  l: [NUM]
+  l: [NAV]
 - p: [27, 26]
   k: $$mdi:play-pause$$
-  l: [NUM]
+  l: [NAV]
 - p: [13, 16]
   k: Caps Word
   l: [DEF]
@@ -233,3 +236,24 @@ combos:
   l: [NUM]
   a: bottom
   o: -0.2
+- p: [17, 16]
+  k: KP PLUS
+  l: [SYS]
+- p: [7, 6]
+  k: KP MINUS
+  l: [SYS]
+- p: [6, 17]
+  k: KP MULTIPLY
+  l: [SYS]
+- p: [16, 7]
+  k: KP DIVIDE
+  l: [SYS]
+- p: [27, 26]
+  k: ','
+  l: [SYS]
+- p: [28, 27]
+  k: KP DOT
+  l: [SYS]
+- p: [18, 17]
+  k: Enter
+  l: [SYS]
