@@ -1052,10 +1052,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="504" y="36" class="combo tap">KP-</text>
 </g>
 <g class="combo combopos-3">
-<path d="M504,30 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v-10" class="combo"/>
-<path d="M504,30 h22 a6.0,6.0 0 0 1 6.0,6.0 v30" class="combo"/>
-<rect rx="6" ry="6" x="490" y="17" width="28" height="26" class="combo"/>
-<text x="504" y="30" class="combo tap">KP*</text>
+<path d="M504,44 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v-24" class="combo"/>
+<path d="M504,44 h22 a6.0,6.0 0 0 1 6.0,6.0 v16" class="combo"/>
+<rect rx="6" ry="6" x="490" y="31" width="28" height="26" class="combo"/>
+<text x="504" y="44" class="combo tap">KP*</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="490" y="51" width="28" height="26" class="combo"/>
