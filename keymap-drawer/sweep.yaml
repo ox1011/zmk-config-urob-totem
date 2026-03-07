@@ -215,9 +215,9 @@ combos:
 - p: [14, 15]
   k: Studio Unlock
   l: [SYS]
-- p: [14, 15]
+- p: [13, 16]
   k: {t: DEF, h: toggle}
-  l: [NUM, NAV]
+  l: [NUM, NAV, SYS]
 - p: [12, 13]
   k: +
   l: [NUM]
