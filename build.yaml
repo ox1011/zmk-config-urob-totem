@@ -33,13 +33,12 @@ include:
 #    shield: totem_left
 #    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 #    artifact-name: totem_peripheral_left
-  - board: xiao_ble//zmk
+  - board: xiao_ble
     shield: totem_left
     artifact-name: totem_central_left
-  - board: xiao_ble//zmk
+  - board: xiao_ble
     shield: totem_right
     artifact-name: totem_peripheral_right
-    
   # reset
 #  - board: xiao_ble
 #    shield: settings_reset
